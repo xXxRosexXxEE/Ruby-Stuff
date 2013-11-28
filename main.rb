@@ -6,13 +6,13 @@ require 'texplay'
 
 class Window < Gosu::Window
 	def initialize
-	puts "Hello"
-	super(640,480, false, 20)
-	self.caption = "Test Window"
-	@pixel_surface = TexPlay::create_blank_image(self, 640,480)
-	$test = 100;
-	
-	puts $test.ceil >= 10
+		puts "Hello"
+		super(640,480, false, 20)
+		self.caption = "Test Window"
+		@pixel_surface = TexPlay::create_blank_image(self, 640,480)
+		$test = 100;
+		
+		puts $test.ceil >= 10
 		
 	end
 	
